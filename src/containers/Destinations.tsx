@@ -65,9 +65,9 @@ const emiratosDestinations: Destination[] = [
     title: " Dubai",
     description: "Uno de los hoteles más lujosos e icónicos del mundo, famoso por su distintiva silueta en forma de vela",
     gallery: [
-      { image: "/dubai2.png", description: "Descripción imagen 1 de Dubai" },
-      { image: "/dubai3.png", description: "Descripción imagen 2 de Dubai" },
-      { image: "/dubai4.png", description: "Descripción imagen 3 de Dubai" },
+      { image: "/dubai2.png", description: "Museo del futuro" },
+      { image: "/dubai3.png", description: "Descubra cómo era la vida en la zona antigua de Dubái durante el siglo XIX" },
+      { image: "/dubai4.png", description: "Icónico monumento y mirador de 150 metros de altura situado en el Zabeel Par" },
     ],
   },
   {
