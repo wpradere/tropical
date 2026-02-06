@@ -3,19 +3,22 @@
 import Image from "next/image";
 import { useEffect, useState, useCallback } from "react";
 
+interface GalleryItem {
+  image: string;
+  description: string;
+}
+
 interface DestinationModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
-  description: string;
-  gallery: string[];
+  gallery: GalleryItem[];
 }
 
 export default function DestinationModal({
   isOpen,
   onClose,
   title,
-  description,
   gallery,
 }: DestinationModalProps) {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -63,6 +66,8 @@ export default function DestinationModal({
 
   if (!isOpen) return null;
 
+  const currentItem = gallery[currentIndex];
+
   return (
     <div
       className={`fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm transition-opacity duration-300 ease-out ${
@@ -102,7 +107,7 @@ export default function DestinationModal({
 
         {/* Carrusel de imágenes */}
         <div className="relative h-[50vh] md:h-[65vh] w-full overflow-hidden">
-          {gallery.map((image, index) => (
+          {gallery.map((item, index) => (
             <div
               key={index}
               className={`absolute inset-0 transition-all duration-500 ease-out ${
@@ -112,7 +117,7 @@ export default function DestinationModal({
               }`}
             >
               <Image
-                src={image}
+                src={item.image}
                 alt={`${title} - imagen ${index + 1}`}
                 fill
                 className="object-cover"
@@ -183,12 +188,9 @@ export default function DestinationModal({
           </div>
         </div>
 
-        {/* Contenido */}
-        <div className="p-6 md:p-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-2">
-            {title}
-          </h2>
-          <p className="text-base md:text-lg text-slate-600">{description}</p>
+        {/* Descripción de la imagen actual */}
+        <div className="p-4 md:p-6 bg-white">
+          <p className="text-base md:text-lg text-slate-700 text-center">{currentItem.description}</p>
         </div>
       </div>
     </div>

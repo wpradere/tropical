@@ -11,7 +11,7 @@ export default function ParallaxSection({
 }: ParallaxSectionProps) {
   return (
     <section
-      className="relative h-[600px] parallax-bg flex items-center justify-center"
+      className="relative h-150 parallax-bg flex items-center justify-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Overlay */}

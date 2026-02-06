@@ -4,11 +4,16 @@ import { useState } from "react";
 import DestinationCard from "./DestinationCard";
 import DestinationModal from "@/components/DestinationModal";
 
+interface GalleryItem {
+  image: string;
+  description: string;
+}
+
 interface Destination {
   image: string;
   title: string;
   description: string;
-  gallery: string[];
+  gallery: GalleryItem[];
 }
 
 const colombiaDestinations: Destination[] = [
@@ -16,40 +21,64 @@ const colombiaDestinations: Destination[] = [
     image: "/monpox3.jpg",
     title: "Santa cruz de Monpox",
     description: "Oficialmente Santa Cruz de Mompox es una Ciudad histórica",
-    gallery: ["/monpox1.jpg", "/monpox2.png", "/monpox3.jpg"],
+    gallery: [
+      { image: "/monpox1.jpg", description: "Descripción imagen 1 de Mompox" },
+      { image: "/monpox2.png", description: "Descripción imagen 2 de Mompox" },
+      { image: "/monpox3.jpg", description: "Descripción imagen 3 de Mompox" },
+    ],
   },
   {
     image: "/caño1.jpg",
     title: "Caño cristales",
     description: "Desde la cima de la Piedra se aprecia la tercera característica clave de Guatapé: el embalse",
-    gallery: ["/caño1.jpg", "/caño2.jpg", "/caño3.jpg"],
+    gallery: [
+      { image: "/caño1.jpg", description: "Descripción imagen 1 de Caño Cristales" },
+      { image: "/caño2.jpg", description: "Descripción imagen 2 de Caño Cristales" },
+      { image: "/caño3.jpg", description: "Descripción imagen 3 de Caño Cristales" },
+    ],
   },
   {
     image: "/nuqui1.jpg",
     title: "Nuquí",
     description: "El Santuario donde la Selva se Funde con el Mar",
-    gallery: ["/nuqui1.jpg", "/nuqui2.jpg", "/nuqui3.jpg"],
+    gallery: [
+      { image: "/nuqui1.jpg", description: "Descripción imagen 1 de Nuquí" },
+      { image: "/nuqui2.jpg", description: "Descripción imagen 2 de Nuquí" },
+      { image: "/nuqui3.jpg", description: "Descripción imagen 3 de Nuquí" },
+    ],
   },
   {
     image: "/barichara1.jpg",
     title: "Barichara",
     description: " Es reconocido por la conservación de su arquitectura colonial de finales del siglo xviii.",
-    gallery: ["/barichara1.jpg", "/barichara2.jpg", "/barichara3.jpg"],
+    gallery: [
+      { image: "/barichara1.jpg", description: "Descripción imagen 1 de Barichara" },
+      { image: "/barichara2.jpg", description: "Descripción imagen 2 de Barichara" },
+      { image: "/barichara3.jpg", description: "Descripción imagen 3 de Barichara" },
+    ],
   },
 ];
 
 const emiratosDestinations: Destination[] = [
   {
-    image: "/img1.jpg",
-    title: "Burj Al Arab",
+    image: "/dubai1.png",
+    title: " Dubai",
     description: "Uno de los hoteles más lujosos e icónicos del mundo, famoso por su distintiva silueta en forma de vela",
-    gallery: ["/img1.jpg", "/img1.jpg", "/img1.jpg"],
+    gallery: [
+      { image: "/dubai2.png", description: "Descripción imagen 1 de Dubai" },
+      { image: "/dubai3.png", description: "Descripción imagen 2 de Dubai" },
+      { image: "/dubai4.png", description: "Descripción imagen 3 de Dubai" },
+    ],
   },
   {
-    image: "/img6.jpg",
-    title: "Mezquita Sheikh Zayed",
+    image: "/abu1.png",
+    title: "Abu Dhabi",
     description: "La Gran Mezquita Sheikh Zayed no es solo un lugar de culto, es una obra maestra arquitectónica diseñada para ser un símbolo de pureza, piedad y la unificación de",
-    gallery: ["/img6.jpg", "/img6.jpg", "/img6.jpg"],
+    gallery: [
+      { image: "/abu2.png", description: "Presidencial Palace" },
+      { image: "/abu3.png", description: "Ferrari World" },
+      { image: "/abu5.png", description: "Yas circuit" },
+    ],
   },
 ];
 
@@ -111,7 +140,6 @@ export default function Destinations() {
           isOpen={!!selectedDestination}
           onClose={handleCloseModal}
           title={selectedDestination.title}
-          description={selectedDestination.description}
           gallery={selectedDestination.gallery}
         />
       )}

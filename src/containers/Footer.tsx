@@ -45,7 +45,7 @@ export default function Footer() {
       </div>
 
       <p className="mt-8 opacity-70">
-        © 2026 Colombia Viajes. Todos los derechos reservados.
+        © 2026  tropicalandeastconnect. Todos los derechos reservados.
       </p>
     </footer>
   );

@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import Link from "next/link";
 
 const slides = [
   "1.png",
-  "2.png",
+  "22.png",
   "3.png",
-  "4.png",
+  "44.png",
 ];
 
 export default function Hero() {
@@ -39,14 +40,17 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 text-shadow-lg">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in-up">
-          Descubre la Magia de Colombia
+          Uniendo dos mundos
         </h1>
         <p className="text-lg md:text-xl lg:text-2xl mb-8 animate-fade-in-up-delay-1">
-          Playas paradisíacas, montañas andinas y cultura vibrante te esperan
+        Donde los destinos exóticos se transforman en experiencias inolvidables
         </p>
-        <button className="px-12 py-4 bg-gradient-to-r from-gold-400 to-gold-500 text-black border-none rounded-full text-lg md:text-xl font-bold cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(255,215,0,0.5)] animate-fade-in-up-delay-2">
+         <Link
+          href="#destinos"
+          className="px-14 py-5 bg-linear-to-r from-gold-400 to-gold-500 text-xl md:text-3xl lg:text-4xl text-white border-none rounded-full font-bold cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(255,215,0,0.5)] "
+        >
           Explora Ahora
-        </button>
+        </Link>
       </div>
 
       {/* Carousel Dots */}
