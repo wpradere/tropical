@@ -22,19 +22,19 @@ const colombiaDestinations: Destination[] = [
     title: "Santa cruz de Monpox",
     description: "Oficialmente Santa Cruz de Mompox es una Ciudad histórica",
     gallery: [
-      { image: "/monpox1.jpg", description: "Descripción imagen 1 de Mompox" },
-      { image: "/monpox2.png", description: "Descripción imagen 2 de Mompox" },
-      { image: "/monpox3.jpg", description: "Descripción imagen 3 de Mompox" },
+      { image: "/monpox1.jpg", description: "Plaza central del pueblo" },
+      { image: "/monpox2.png", description: "Hermosa vista desde el río" },
+      { image: "/monpox3.jpg", description: "Panorámica del pueblo. " },
     ],
   },
   {
     image: "/caño1.jpg",
     title: "Caño cristales",
-    description: "Desde la cima de la Piedra se aprecia la tercera característica clave de Guatapé: el embalse",
+    description: "Los colores de Caño Cristales (rojo, amarillo, verde, azul y negro)",
     gallery: [
-      { image: "/caño1.jpg", description: "Descripción imagen 1 de Caño Cristales" },
-      { image: "/caño2.jpg", description: "Descripción imagen 2 de Caño Cristales" },
-      { image: "/caño3.jpg", description: "Descripción imagen 3 de Caño Cristales" },
+      { image: "/caño1.jpg", description: "Uno de los ríos más hermosos del mundo" },
+      { image: "/caño2.jpg", description: "Planta acuática endémica llamada Macarenia clavigera la que le da sus hermosos colores" },
+      { image: "/caño3.jpg", description: "Agua transparente, fiel reflejo del cielo azul" },
     ],
   },
   {
@@ -42,9 +42,9 @@ const colombiaDestinations: Destination[] = [
     title: "Nuquí",
     description: "El Santuario donde la Selva se Funde con el Mar",
     gallery: [
-      { image: "/nuqui1.jpg", description: "Descripción imagen 1 de Nuquí" },
-      { image: "/nuqui2.jpg", description: "Descripción imagen 2 de Nuquí" },
-      { image: "/nuqui3.jpg", description: "Descripción imagen 3 de Nuquí" },
+      { image: "/nuqui1.jpg", description: "Agua turquesa con una gran variedad de flora y fauna única en el mundo" },
+      { image: "/nuqui2.jpg", description: "Hermosa vista del mar Pacífico" },
+      { image: "/nuqui3.jpg", description: "Uno de los mejores espectáculos naturales de Colombia, ocurriendo principalmente entre julio y mediados de octubre" },
     ],
   },
   {
@@ -52,9 +52,9 @@ const colombiaDestinations: Destination[] = [
     title: "Barichara",
     description: " Es reconocido por la conservación de su arquitectura colonial de finales del siglo xviii.",
     gallery: [
-      { image: "/barichara1.jpg", description: "Descripción imagen 1 de Barichara" },
-      { image: "/barichara2.jpg", description: "Descripción imagen 2 de Barichara" },
-      { image: "/barichara3.jpg", description: "Descripción imagen 3 de Barichara" },
+      { image: "/barichara1.jpg", description: "La localidad ha sido destacada por su preservación arquitectónica y su atractivo turístico" },
+      { image: "/barichara2.jpg", description: "La catedral de la Inmaculada Concepción en recuerdo a la Virgen de la roca es una obra única" },
+      { image: "/barichara3.jpg", description: "El centro histórico de Barichara se declaró monumento nacional" },
     ],
   },
 ];
