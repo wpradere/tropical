@@ -26,7 +26,7 @@ export default function Footer() {
     <footer id="contacto" className="bg-azul-oceano text-white text-center py-12 px-8">
       <h3 className="text-gold-400 text-xl font-bold mb-4">Contacto</h3>
       <p className="mb-4">
-        📧 tropicalandeastconnect@gmail.com
+        📧 info@tropicalandeastconnect.com
       </p>
 
       <div className="flex justify-center gap-8 mt-4">

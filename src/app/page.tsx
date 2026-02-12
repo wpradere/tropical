@@ -12,8 +12,8 @@ export default function Home() {
       <Hero />
       <ParallaxSection
         backgroundImage="5.png"
-        title="Santafé de Antioquia"
-        description="Un pueblo patrimonio situado en el departamento de Antioquia, en el occidente de Colombia"
+        title="The Atlantis"
+        description="Un gigantesco destino de entretenimiento y lujo ubicado en la famosa isla artificial Palm Jumeirah"
       />
        <Destinations />
 
