@@ -63,7 +63,7 @@ const emiratosDestinations: Destination[] = [
   {
     image: "/dubai1.png",
     title: " Dubai",
-    description: "Uno de los hoteles más lujosos e icónicos del mundo, famoso por su distintiva silueta en forma de vela",
+    description: "El centro de negocios y turismo",
     gallery: [
       { image: "/dubai2.png", description: "Museo del futuro" },
       { image: "/dubai3.png", description: "Descubra cómo era la vida en la zona antigua de Dubái durante el siglo XIX" },
@@ -73,11 +73,61 @@ const emiratosDestinations: Destination[] = [
   {
     image: "/abu1.png",
     title: "Abu Dhabi",
-    description: "La Gran Mezquita Sheikh Zayed no es solo un lugar de culto, es una obra maestra arquitectónica diseñada para ser un símbolo de pureza, piedad y la unificación de",
+    description: "La Capital",
     gallery: [
       { image: "/abu2.png", description: "Presidencial Palace" },
       { image: "/abu3.png", description: "Ferrari World" },
       { image: "/abu5.png", description: "Yas circuit" },
+    ],
+  },
+    {
+    image: "/sharjan1.png",
+    title: "Sharjah",
+    description: "Conocido como el centro cultural",
+    gallery: [
+      { image: "/sharjan1.png", description: "La casa Bait Al Naboodah, un maravilloso ejemplo de arquitectura emiratí del s. XIX" },
+      { image: "/sharjan2.png", description: "Museo de la Caligrafía, en Heart of Sharjah" },
+      { image: "/sharjan3.png", description: "El mariposario" },
+    ],
+  },
+    {
+    image: "/Ajman1.png",
+    title: "Ajman",
+    description: "Se conoce por ser un destino más relajado, tradicional y auténtico",
+    gallery: [
+      { image: "/ajiman2.png", description: "Mezquita Humaid bin Abdulaziz Al Nuaimi." },
+      { image: "/ajiman3.png", description: "Entrada al pueblo de Katara (Valle de las Culturas) en Doha" },
+      { image: "/ajiman4.png", description: "Museo Ajman" },
+    ],
+  },
+  {
+    image: "/mmm2.png",
+    title: "mmm Al Quwain",
+    description: "Refugio de aventura, arqueología y vida silvestre",
+    gallery: [
+      { image: "/mmm2.png", description: "Hermosas playas" },
+      { image: "/mmm3.png", description: "Barracuda Beach Resort" },
+      { image: "/mmm4.png", description: "Avion abandonado" },
+    ],
+  },
+  {
+    image: "/ras1.png",
+    title: " Ras Al Khaimah",
+    description: "Famoso por sus montañas y aventura",
+    gallery: [
+      { image: "/ras1.png", description: "Bosque de manglares" },
+      { image: "/ras2.png", description: "Camellos" },
+      { image: "/ras3.png", description: "Ciudad" },
+    ],
+  },
+  {
+    image: "/fujairah1.png",
+    title: "AFujairah",
+    description: "El único con costa exclusivamente en el Golfo de Omán",
+    gallery: [
+      { image: "/fujairah1.png", description: "Gran Mezquita Sheikh Zayed en Fujairah" },
+      { image: "/fujairah2.png", description: "playa de arena de Fujairah" },
+      { image: "/fujairah3.png", description: "Fuerte de Fujairah en el Emirato de Fujairah" },
     ],
   },
 ];
@@ -122,7 +172,7 @@ export default function Destinations() {
       <h3 className="text-center text-2xl md:text-3xl font-semibold mb-8 text-slate-700">
         Emiratos Árabes
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {emiratosDestinations.map((destination) => (
           <DestinationCard
             key={destination.title}

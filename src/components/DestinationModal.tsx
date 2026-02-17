@@ -106,11 +106,11 @@ export default function DestinationModal({
         </button>
 
         {/* Carrusel de imágenes */}
-        <div className="relative h-[50vh] md:h-[65vh] w-full overflow-hidden">
+        <div className="relative h-[50vh] md:h-[65vh] w-full overflow-hidden bg-black">
           {gallery.map((item, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-all duration-500 ease-out ${
+              className={`absolute inset-0 flex items-center justify-center transition-all duration-500 ease-out ${
                 index === currentIndex
                   ? "opacity-100 scale-100"
                   : "opacity-0 scale-105"
@@ -120,7 +120,7 @@ export default function DestinationModal({
                 src={item.image}
                 alt={`${title} - imagen ${index + 1}`}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="95vw"
                 priority={index === 0}
               />
