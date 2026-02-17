@@ -102,7 +102,7 @@ const emiratosDestinations: Destination[] = [
   },
   {
     image: "/mmm2.png",
-    title: "mmm Al Quwain",
+    title: "Umm Al Quwain",
     description: "Refugio de aventura, arqueología y vida silvestre",
     gallery: [
       { image: "/mmm2.png", description: "Hermosas playas" },
@@ -122,7 +122,7 @@ const emiratosDestinations: Destination[] = [
   },
   {
     image: "/fujairah1.png",
-    title: "AFujairah",
+    title: "Fujairah",
     description: "El único con costa exclusivamente en el Golfo de Omán",
     gallery: [
       { image: "/fujairah1.png", description: "Gran Mezquita Sheikh Zayed en Fujairah" },
