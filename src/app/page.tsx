@@ -16,7 +16,6 @@ export default function Home() {
         description="Un gigantesco destino de entretenimiento y lujo ubicado en la famosa isla artificial Palm Jumeirah"
       />
        <Destinations />
-
         <ParallaxSection
         backgroundImage="img7.jpg"
         title="Experiencias Únicas"

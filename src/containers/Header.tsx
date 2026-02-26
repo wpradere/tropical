@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "#inicio", label: "Inicio" },
+  { href: "/", label: "Inicio" },
   { href: "#destinos", label: "Destinos" },
-  { href: "#experiencias", label: "Experiencias" },
+  { href: "/experiencias", label: "Experiencias" },
   { href: "#contacto", label: "Contacto" },
 ];
 
@@ -30,7 +30,7 @@ export default function Header() {
       }`}
     >
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
-        <Link href="#inicio">
+        <Link href="/">
           <Image
             src="/logo1.png"
             alt="Tropicalia Logo"
